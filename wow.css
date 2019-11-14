@@ -9,6 +9,12 @@ h2 {
 }
 
 
+ <style>
+    a {
+     text-decoration: none;
+    }
+  </style>
+
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
