@@ -1,163 +1,372 @@
-.alignright{
-    float:right;
-}
-
-.alignleft{
-    float:left;
-}
-
 p {
-    text-align:left;
-}
-p2 {
-   margin-left: 400px;
-}
-
-p3 {
-  margin: auto;
-  text-align: center;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-     font-size: 100px;
-}
-* {box-sizing: border-box;}
-
-body { 
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
 }
 
-div {
-    display: block; 
-    
-    text-align:center; 
-    
+h2 {
+  margin:auto;
+  text-align:center;
+  font-size: 70px;
 }
 
+
+/* Style the header with a grey background and some padding */
 .header {
-    font-size: 100px;
   overflow: hidden;
-  background-color: #ba0000;
+  background-color: #051F5C;
   padding: 20px 10px;
 }
 
+/* Style the header links */
 .header a {
   float: left;
   color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 30px; 
+  font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
 }
 
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
 }
 
+/* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #333333;
+  background-color: #ddd;
   color: white;
 }
 
+/* Style the active/current link*/
 .header a.active {
-  background-color: #333333;
+  background-color: dodgerblue;
   color: white;
 }
 
+/* Float the link section to the right */
 .header-right {
+  text-align: right;
   float: right;
+
 }
 
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
     text-align: left;
   }
-  
   .header-right {
     float: none;
   }
 }
-
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* Style the icon bar links */
-.icon-bar a {
-  display: block;
+h1 {
+  margin: 0;
   text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+  font-size: 70px;
 }
 
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
-  background-color: #000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
-.twitter {
-  background: #ba0000;
-  color: white;
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-.youtube {
-  background: #ba0000;
-  color: white;
-}
-.instagram {
-  background: #ba0000;
-  color: white;
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 12px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
+/* Set a style for all buttons */
+button {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#white {
+  position: 300px;
+  top: 0;
+  right: 0;
+  width: calc(100% - 0px);
+  height: 100px;
+  background: white;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  margin: auto;
-  width: 60%;
-  background-color: #f2f2f2;
-  padding: 10px;
-  height: 650px;
-  
-}
+
+
 
