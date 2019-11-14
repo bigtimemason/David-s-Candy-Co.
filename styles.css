@@ -1,4 +1,11 @@
-#heading:hover {
+a {
+     text-decoration: none;
+     color: black;
+     word-spacing: 30px;
+
+    }
+
+#header-right:hover {
 	background-color: blue;
 	color: white;
 }
