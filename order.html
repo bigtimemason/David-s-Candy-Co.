@@ -36,9 +36,6 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-contact {
-input:required;
- }
 </style>
 
 </head>
@@ -77,15 +74,15 @@ input:required;
     <form name="contact" method="POST" data-netlify="true">
 
     <label for="fname">First Name</label>
-    <br><input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br><input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
     <br><br><label for="lname">Last Name</label>
-    <br><input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br><input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
         
    
 
     <br><br><label for="subject">Your Order</label>
-    <br><textarea id="subject" name="subject" placeholder="Custom Order"></textarea>
+    <br><textarea id="subject" name="subject" placeholder="Custom Order" required></textarea>
 
     <br><br><input class="ex1" type="submit" value="Submit">
 
